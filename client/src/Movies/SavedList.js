@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink, Link } from 'react-router-dom';
+import { Button } from 'reactstrap';
 
 function SavedList({ list }) {
   return (
@@ -16,8 +17,13 @@ function SavedList({ list }) {
           </NavLink>
         );
       })}
-      <div className="home-button">
-        <Link to="/">Home</Link>
+      <div>
+      <Button style={{ marginRight: '5px', marginLeft: '5px' }}>
+        <Link style={{color: 'white', textDecorationLine: 'none'}} to="/">Home</Link>
+      </Button>
+      <Button style={{ marginRight: '5px', marginLeft: '5px' }}>
+        <Link style={{color: 'white', textDecorationLine: 'none'}} to="add-movie">Add Movie</Link>
+      </Button>
       </div>
     </div>
   );

@@ -2,7 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #f2f2f2;
+  background-color: #454652;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2, h3 {
+  color: #000000;
 }
 
 .movie-card {
@@ -19,6 +27,23 @@ body {
 .movie-director {
   padding: 4px 0;
   font-size: 0.8rem;
+  color: dodgerblue
+}
+
+.movie-star {
+  font-weight: 700;
+  font-family: Tahoma;
+  color: dodgerblue;
+}
+
+.movie-metascore {
+  color: #000000;
+  font-weight: 550;
+  font-family: 'Times New Roman';
+}
+
+.movie-metascore strong {
+  color: dodgerblue;
 }
 
 .saved-list {
@@ -53,25 +78,14 @@ body {
   width: 75%;
   margin: 1rem auto;
 }
-.save-button {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  border: 1px solid grey;
-  padding: 5px 10px;
-  background-color: lightseagreen;
-}
-.save-button:hover {
-  background-color: green;
-  color: white;
-}
-
-.home-button {
-  padding: 5px 10px;
-  background-color: lightskyblue;
-}
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.update-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
